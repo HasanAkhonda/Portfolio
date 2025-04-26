@@ -1,5 +1,5 @@
 import '../../App.css'
-import heroImage from '../../assets/hero.jpg'
+import portfolioPicture from '../../assets/portfolioPicture.jpg'
 
 
 const Hero = () => {
