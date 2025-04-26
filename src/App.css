@@ -1,0 +1,203 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+
+.title{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 45px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.heroImage {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.heroImage img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.heroContent {
+  flex: 1;
+  min-width: 250px;
+}
+
+.heroContent h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.heroContent p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.mbutton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.mbutton:hover {
+  background-color: #0056b3;
+}
+
+/* Projects Section */
+.showcase {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  border: 2px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.cardImage {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.cardContainer {
+  padding: 16px;
+}
+
+.cardContainer h3 {
+  margin: 0 0 10px;
+}
+
+.cardContainer p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.cardContainer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cardContainer button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contactSection{
+  padding: 50px;
+}
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width:250px;
+  padding: 20px;
+  margin-top: 12px;
+  border: 1px solid gray;
+}
+input{
+  border: 1px solid gray;
+}
+textarea{
+  border: 1px solid gray;
+
+}
