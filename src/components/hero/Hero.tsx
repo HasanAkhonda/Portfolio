@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <section className="heroSection" id="about">
         <div className="heroImage">
-          <img src={heroImage} alt="Hero" />
+          <img src={portfolioPicture} alt="Hero" />
         </div>
         <div className="heroContent">
           <h2>Hi, I'm Md Mahmud Hasan Akhonda</h2>
